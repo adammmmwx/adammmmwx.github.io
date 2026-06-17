@@ -31,7 +31,7 @@
 <body>
 
     <h1>Welcome to AdamWeather</h1>
-    <p>Official weather tracking hub coming soon, styll.</p>
+    <p>Official weather tracking hub coming soon, we are working on it!</p>
 
 </body>
 </html>
