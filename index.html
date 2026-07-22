@@ -3,34 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AdamWeather</title>
+    <title>AdamWeather Archive</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #121824;
-            color: #ffffff;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
+        html, body {
             margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            background-color: #111;
         }
-        h1 {
-            font-size: 3rem;
-            margin-bottom: 10px;
-            color: #4a90e2;
-        }
-        p {
-            font-size: 1.2rem;
-            color: #a0aec0;
+        /* This container shifts the iframe up to clip off the Wayback Machine banner */
+        .archive-container {
+            position: absolute;
+            top: -55px; /* Adjust this value if the archive toolbar height changes */
+            left: 0;
+            width: 100%;
+            height: calc(100% + 55px);
+            border: none;
         }
     </style>
 </head>
 <body>
 
-    <h1>Welcome to AdamWeather</h1>
-    <p>Official weather tracking hub coming soon, we are working on it!</p>
+    <iframe src="https://web.archive.org/web/20260513210641/https://adamweather.info.gf/" class="archive-container"></iframe>
 
 </body>
 </html>
